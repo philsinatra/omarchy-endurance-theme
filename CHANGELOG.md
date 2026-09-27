@@ -5,6 +5,28 @@ All notable changes to Endurance are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.0] - 2026-09-27
+
+Endurance now installs like any other Omarchy theme: one `omarchy theme
+install` and every app, Neovim included, is themed from `colors.toml`.
+
+### Changed
+
+- Palette redesigned for the roles Omarchy's templates assign each slot:
+  - nebula violet keywords, accretion amber types, starlight constants, ember
+    numbers
+  - blueshift functions, glacier parameters, frost properties, lichen strings
+  - Neovim and VS Code now read the same way.
+- Comments raised to 5.4:1 contrast. Every pair of syntax roles is at least
+  0.078 apart in OKLab.
+- Preview image and palette card regenerated from the stock-generated editor
+  theme.
+
+### Removed
+
+- The hand-written `neovim.lua` and its template. Omarchy drops Lua files from
+  git-installed themes, so it only ever reached symlinked installs.
+
 ## [0.1.0] - 2026-09-27
 
 First release.
@@ -28,4 +50,5 @@ First release.
 - Generator scripts for the palette, Neovim theme, btop theme, gradient and
   black hole render.
 
+[0.2.0]: https://github.com/philsinatra/omarchy-endurance-theme/releases/tag/v0.2.0
 [0.1.0]: https://github.com/philsinatra/omarchy-endurance-theme/releases/tag/v0.1.0
